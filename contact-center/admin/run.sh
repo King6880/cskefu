@@ -5,8 +5,8 @@
 
 # constants
 baseDir=$(cd `dirname "$0"`;pwd)
-registryName=dockerhub.qingcloud.com
-imagename=chatopera/contact-center
+registryName=registry.cn-hangzhou.aliyuncs.com
+imagename=makangle/contact-center
 PACKAGE_VERSION=w4l
 
 # functions

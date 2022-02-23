@@ -14,7 +14,8 @@ services:
       - contact-center
 
   contact-center:
-    image: ${CC_IMAGE:-chatopera/contact-center:develop}
+    image: registry.cn-hangzhou.aliyuncs.com/makangle/contact-center:1.0.1
+#    image: ${CC_IMAGE:-chatopera/contact-center:develop}
     restart: always
     ports:
       - "${CC_WEB_PORT:-8035}:8035"

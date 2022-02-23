@@ -1,5 +1,5 @@
-FROM chatopera/java-1.8.0-amazon-corretto-jdk:1.0.0
-MAINTAINER Hai Liang Wang <hain@chatopera.com>
+FROM registry.cn-hangzhou.aliyuncs.com/makangle/java-1.8.0-amazon-corretto-jdk:1.0.0
+MAINTAINER Kang Le Ma <admin@ttt5.net>
 # base image is built with config/base/build.sh
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -11,7 +11,7 @@ ENV APPLICATION_CUSTOMER_ENTITY=$APPLICATION_CUSTOMER_ENTITY
 ENV APPLICATION_BUILD_DATESTR=$APPLICATION_BUILD_DATESTR
 
 LABEL org.label-schema.vcs-ref=$VCS_REF \
-          org.label-schema.vcs-url="https://github.com/chatopera/cskefu"
+          org.label-schema.vcs-url="https://gitee.com/king6880/cskefu"
 
 # create dirs
 RUN /bin/bash -c "mkdir -p /{data,logs}"

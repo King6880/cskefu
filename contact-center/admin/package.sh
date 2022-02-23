@@ -1,10 +1,13 @@
-#! /bin/bash 
+#! /bin/bash
 ###########################################
 #
 ###########################################
 
 # constants
-baseDir=$(cd `dirname "$0"`;pwd)
+baseDir=$(
+  cd $(dirname "$0")
+  pwd
+)
 # functions
 
 # main
@@ -15,5 +18,5 @@ mvn -DskipTests clean package
 # $baseDir/deploy.app.sh
 
 if [ ! $? -eq 0 ]; then
-    exit 1
+  exit 1
 fi
