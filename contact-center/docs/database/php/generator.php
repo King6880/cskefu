@@ -23,7 +23,7 @@ define('DB_PASS',$options["p"]);
 define('DB_CHAR', "utf8");
 
 // 其他配置
-$title = '春松客服-数据字典';
+$title = '云汲科技-数据字典';
 $version = $options["v"];
 
 $conn = @mysqli_connect(DB_HOST.':'.DB_PORT,DB_USER,DB_PASS) or die("Mysql connect is error.");
