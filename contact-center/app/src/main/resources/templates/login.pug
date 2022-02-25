@@ -6,7 +6,7 @@ html
         meta(http-equiv="Cache-Control" content="no-siteapp")
         meta(name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0,initial-scale=1.0,user-scalable=no")
         meta(name="apple-mobile-web-app-capable" content="yes")
-        title= systemConfig.title ? systemConfig.title : '云汲科技 | 多渠道智能客服_联络中心'
+        title='云汲科技 | 多渠道智能客服_联络中心'
         if systemConfig.favlogo
             link(rel="shortcut icon" type="image/x-icon" href='/res/image.html?id=' + systemConfig.favlogo)
         else
@@ -42,9 +42,6 @@ html
                 if (uid) {
                     document.getElementById("username").value = uid;
                 }
-                console.info("云汲科技：越是重视客户服务，越是好的企业 https://www.cskefu.com/")
-                console.info("   * 鼓励我们不断的优化云汲科技，给云汲科技点赞 https://github.com/chatopera/cskefu/stargazers");
-                console.info("   * 商务洽谈、技术支持等联系方式查看 https://dwz.chatopera.com/A51h6m");
             }
             if ('#{tongjiBaiduSiteKey}') {
                 var _hmt = _hmt || [];
@@ -85,5 +82,3 @@ html
                                 p.btm-text
                                     | 还没有账号？
                                     a(href="/register.html") 注册新账号
-        div(style="text-align: center;"): a(style="display: inline-block;color: #C7C6C6;text-decoration: none;cursor: pointer;", href="https://www.cskefu.com", target="_blank") Powered by CSKeFu
-
